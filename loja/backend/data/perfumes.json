@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "Sabah Al Ward",
+    "preco": "R$ 269,00",
+    "notas_topo": "Pimenta rosa, mandarina",
+    "notas_coracao": "Semente de cacau, flor de laranjeira, jasmim samba-canção",
+    "notas_base": "Baunilha, fava tonka, patchouli.",
+    "descricao": "Presença floral doce, com toque cítrico inicial e fundo amadeirado reconfortante.",
+    "imagem": "img/perfumes/fakharrose.png"
+  },
+  {
+    "id": 2,
+    "nome": "Asad Black",
+    "preco": "R$ 359",
+    "descricao": "Perfume fresco com toque atalcado e especiado.",
+    "notas": "Pimenta preta, tabaco, patchouli, café e baunilha.",
+    "imagem": "img/perfumes/asadblack.png"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "nome": "Power Bank Xiaomi 20000mAh",
+    "preco": "R$ 180,00",
+    "descricao": "18W Fast Charge ⚡ | Alta capacidade 🔋 | à vista 💰",
+    "imagem": "../frontend/img/produtos/powerbank.png"
+  },
+  {
+    "id": 2,
+    "nome": "Hub Multifuncional 7 em 1",
+    "preco": "R$ 110,00",
+    "descricao": "HDMI 4K 📺 | USB | SD/MicroSD | Entrada Type-C 🔌",
+    "imagem": "../frontend/img/produtos/hub7em1.png"
+  },
+  {
+    "id": 3,
+    "nome": "Case de Silicone iPhone (diversos modelos)",
+    "preco": "R$ 40,00",
+    "descricao": "Cores variadas 🎨 | Acabamento premium | à vista 💰",
+    "imagem": "../frontend/img/produtos/casesiphone.png"
+  },
+  {
+    "id": 4,
+    "nome": "Case com teclado para iPad 10/11/Air",
+    "preco": "R$ 599,00",
+    "descricao": "Com retroiluminação 💡 | Até 3x de R$ 200,00 💳",
+    "imagem": "../frontend/img/produtos/case_teclado.png"
+  },
+  {
+    "id": 5,
+    "nome": "Caneta Stylus para iPad",
+    "preco": "R$ 130,00",
+    "descricao": "Palm Rejection ✅ | Alta precisão ✍️ | à vista 💰",
+    "imagem": "../frontend/img/produtos/caneta_stylus.png"
+  },
+  {
+    "id": 6,
+    "nome": "Caneta Baseus Magnética",
+    "preco": "R$ 239,90",
+    "descricao": "Design magnético 🧲 | Escrita suave ✍️ | à vista 💰",
+    "imagem": "../frontend/img/produtos/caneta_baseus.png"
+  },
+  {
+    "id": 7,
+    "nome": "Película de cerâmica fosca iPad 9/10/11",
+    "preco": "R$ 75,00",
+    "descricao": "Anti-reflexo 🌫️ | Toque suave | Proteção total 💪",
+    "imagem": "../frontend/img/produtos/pelicula_ipad.png"
+  },
+  {
+    "id": 8,
+    "nome": "Case para iPad 7/8/9/10/11",
+    "preco": "R$ 89,90",
+    "descricao": "Cores disponíveis 🌈 | Modelos compatíveis ✅ | à vista 💰",
+    "imagem": "../frontend/img/produtos/case_ipad.png"
+  },
+  {
+    "id": 9,
+    "nome": "Suporte giratório 360º para tablet",
+    "preco": "R$ 75,00",
+    "descricao": "Base metálica ⚙️ | Rotação completa | à vista 💰",
+    "imagem": "../frontend/img/produtos/suporte_tablet.png"
+  },
+  {
+    "id": 10,
+    "nome": "Kit Teclado e Mouse Bluetooth",
+    "preco": "R$ 120,00",
+    "descricao": "Conexão BT 💻 | Várias cores 🎨 | à vista 💰",
+    "imagem": "../frontend/img/produtos/kit_teclado_mouse.png"
+  }
+]

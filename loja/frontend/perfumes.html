@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfumes Árabes - Connecta</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="img/nova-logo.png" alt="Connecta Imports" class="logo">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="celulares-lacrados.html">Aparelhos Lacrados</a>
+      <a href="celulares-seminovos.html">Aparelhos Seminovos</a>
+      <a href="ipads.html">iPads</a>
+      <a href="tablets.html">Tablets</a>
+      <a href="acessorios.html">Acessórios</a>
+      <a href="perfumes.html">Perfumes Árabes</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+<section class="produtos">
+  <h2>Perfumes Árabes</h2>
+  <p class="subtitle">Perfumes Árabes originais e intensas — exclusivas Connecta</p>
+  <p class="info-parcelamento">💳 Parcelamos em até <strong>4x sem juros</strong> nos cartões.</p>
+
+  <div id="catalogo" class="grid"></div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Connecta — Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    const perfumes = [
+      {
+        nome: "Sabah Al Ward",
+        preco: "R$ 269,00",
+        notas_topo: "Pimenta rosa, mandarina",
+        notas_coracao: "Semente de cacau, flor de laranjeira, jasmim samba-canção",
+        notas_base: "Baunilha, fava tonka, patchouli",
+        descricao: "Presença floral doce, com toque cítrico inicial e fundo amadeirado reconfortante.",
+        imagem: "img/perfumes/sabah.jpeg"
+      },
+         
+      {
+        nome: "Musamam White Intense",
+        preco: "R$ 389",
+        notas_topo: "Bergamota, laranja, especiarias",
+        notas_coracao: "Coco, ylang ylang, ambroxan, mahonial.",
+        notas_base: "Sândalo, almíscar, benjoim",
+        descricao: "Combina notas cremosas e amadeiradas com um toque especiado e adocicado.",
+        imagem: "img/perfumes/musumam.jpeg"
+      },
+      {
+        nome: "Yara",
+        preco: "R$ 324",
+        notas_topo: "Orquídea, heliotrópio, tangerina",
+        notas_coracao: "Acorde gourmand, frutas tropicais",
+        notas_base: "Baunilha, almíscar, sândalo",
+        descricao: "Fragrância envolvente que celebra a feminilidade com um toque de doçura e conforto.",
+        imagem: "img/perfumes/yara.jpeg"
+      },
+      {
+        nome: "Durrat Al Aroos",
+        preco: "R$ 229",
+        notas_topo: "Almíscar branco, nagarmota ou óleo de cipriol",
+        notas_coracao: "Baunilha, cardamomo, açafrão",
+        notas_base: "Madeira guaiac, cumarina",
+        descricao: "Une a delicadeza de notas amadeiradas e adocicadas com um toque de especiarias envolventes.",
+        imagem: "img/perfumes/durrat.jpeg"
+      },
+      {
+        nome: "Royal Amber",
+        preco: "R$ 549",
+        notas_topo: "Bergamota, notas verdes",
+        notas_coracao: "Notas doces, melão, abacaxi, âmbar",
+        notas_base: "Notas amadeiradas, almíscar, baunilha",
+        descricao: "Sua composição equilibra frescor frutado e base oriental, resultando em uma fragrância unissex intensa.",
+        imagem: "img/perfumes/royal-amber.jpeg"
+      },
+      {
+        nome: "Club de Nuit Woman",
+        preco: "R$ 369",
+        notas_topo: "Laranja, toranja, bergamota, pêssego",
+        notas_coracao: "Rosa, gerânio, jasmim, lichia",
+        notas_base: "Patchouli ou oriza, baunilha, almíscar, vetiver",
+        descricao: "Inspirado no Coco Mademoiselle, de Chanel, este perfume combina frescor cítrico, um coração floral delicado e uma base almiscarada e sensual.",
+        imagem: "img/perfumes/club-de-nuit-woman.jpeg"
+      },
+      {
+        nome: "Ameerati",
+        preco: "R$ 224",
+        notas_topo: "Almíscar, cítricos, notas verdes",
+        notas_coracao: "Notas herbais, notas amadeiradas",
+        notas_base: "Notas atalcadas, notas especiadas",
+        descricao: "É uma fragrância feminina que envolve os sentidos com um frescor limpo e ao mesmo tempo misterioso.",
+        imagem: "img/perfumes/ameerati.jpeg"
+      },
+      {
+        nome: "Mayar",
+        preco: "R$ 289",
+        notas_topo: "Lichia, framboesa, folha de violeta",
+        notas_coracao: "Rosa branca, peônia, jasmim",
+        notas_base: "Almíscar, baunilha",
+        descricao: "Combinação de notas frutadas e florais, Mayar exala feminilidade e sofisticação.",
+        imagem: "img/perfumes/mayar.jpeg"
+      },
+      {
+        nome: "Honor & Glory",
+        preco: "R$ 295",
+        notas_topo: "Abacaxi e Crème Brûlée",
+        notas_coracao: "Canela, cúrcuma, pimenta preta e benjoim",
+        notas_base: "Baunilha, sândalo, cashmeran e musgo",
+        descricao: "O aroma é descrito como gourmand (quase comestível), quente, envolvente e sofisticado.",
+        imagem: "img/perfumes/honor.jpeg"
+      },
+      {
+        nome: "Afeef",
+        preco: "R$ 379",
+        notas_topo: "Pêssego, pimenta-rosa, bergamota",
+        notas_coracao: "Tuberosa, jasmim, flor de laranjeira",
+        notas_base: "Patchouli ou oriza, baunilha, almíscar, vetiver",
+        descricao: "Unissex floral frutado, doce e sofisticado, que equilibra frescor, cremosidade e sensualidade com maestria.",
+        imagem: "img/perfumes/afeef.jpeg"
+      },
+      {
+        nome: "Salvo",
+        preco: "R$ 229",
+        notas_topo: "Bergamota",
+        notas_coracao: "Lavanda, pimenta de Szechuan, anis estrelado e noz-moscada",
+        notas_base: "Ambroxan e baunilha",
+        descricao: "Combinação de notas frutadas e florais, Mayar exala feminilidade e sofisticação.",
+        imagem: "img/perfumes/salvo.jpeg"
+      },
+      {
+        nome: "Fakhar Rose",
+        preco: "R$ 315",
+        notas_topo: "Frutas, lírio, romã, aldeídos",
+        notas_coracao: "Tuberosa, jasmim, gardênia, ylang-ylang, madressilva, rosa, peônia",
+        notas_base: "Baunilha, ambroxan, musk branco, sândalo",
+        descricao: "O 'perfume da sereia', explosão de flores brancas envolvidas por um fundo doce e cremoso.",
+        imagem: "img/perfumes/fakhar-rose.jpeg"
+      },
+      {
+        nome: "Fakhar Black",
+        preco: "R$ 314",
+        notas_topo: "Maçã, bergamota, gengibre",
+        notas_coracao: "Lavanda, sálvia, bagas de zimbro, gerânio",
+        notas_base: "Fava tonka, cedro, madeira de âmbar, vetiver",
+        descricao: "Harmonia perfeita entre frescor frutado, especiarias e base amadeirada.",
+        imagem: "img/perfumes/fakhar-black.jpeg"
+      },
+      {
+        nome: "Fakhar Gold",
+        preco: "R$ 314",
+        notas_topo: "Toranja, pimenta rosa, cardamomo",
+        notas_coracao: "Tuberosa, notas solares, artemísia",
+        notas_base: "Âmbar, cashmeran, ládano, couro",
+        descricao: "Notas amadeiradas, doces e especiadas criam uma experiência perfeita para homens modernos. Inspirado no famoso One Million.",
+        imagem: "img/perfumes/fakhar-gold.jpeg"
+      },
+      {
+        nome: "Asad Black",
+        preco: "R$ 304",
+        notas_topo: "Pimenta preta, tabaco, abacaxi",
+        notas_coracao: "Patchouli, café, íris",
+        notas_base: "Baunilha, âmbar, ládano, madeira seca, benjoim",
+        descricao: "É um perfume fresco com um toque levemente atalcado e especiado.",
+        imagem: "img/perfumes/asad-black.jpeg"
+      },
+      {
+        nome: "Asad Bourbon",
+        preco: "R$ 359",
+        notas_topo: "Ameixa mirabelle, lavanda, pimenta rosa",
+        notas_coracao: "Cacau, noz-moscada, davana",
+        notas_base: "Baunilha de bourbon, âmbar, vetiver",
+        descricao: "Lembra ícones como Scandal Absolu, Valentino Uomo Born in Roma e Stronger With You, mas com uma identidade própria.",
+        imagem: "img/perfumes/asad-bourbon.jpeg"
+      },
+      {
+        nome: "Club de Nuit Intense Man",
+        preco: "R$ 369",
+        notas_topo: "Limão, abacaxi, bergamota, groselha preta, maçã",
+        notas_coracao: "Vidoeiro, jasmim, rosa",
+        notas_base: "Almíscar, âmbar cinzento, patchouli, baunilha",
+        descricao: "Inspirado no icônico Creed Aventus, este perfume combina frescor cítrico com profundidade amadeirada, criando um aroma envolvente e memorável.",
+        imagem: "img/perfumes/club-de-nuit-man.jpeg"
+      },
+      {
+        nome: "Al Noble Safeer",
+        preco: "R$ 354",
+        notas_topo: "Bergamota, artemísia, notas verdes e notas herbais",
+        notas_coracao: "Especiarias, flor de laranjeira, lavanda e sálvia",
+        notas_base: "Patchouli, zimbro, olíbano e outras madeiras",
+        descricao: "É uma opção para quem busca um aroma sofisticado, envolvente e marcante.",
+        imagem: "img/perfumes/al-noble-safeer.jpeg"
+      },
+      {
+        nome: "Al Noble Ameer",
+        preco: "R$ 354",
+        notas_topo: "Maçã, pimenta rosa, alecrim",
+        notas_coracao: "Notas florais, cravo-da-índia",
+        notas_base: "Patchouli, agarwood, ládano, vetiver, cipreste",
+        descricao: "Combina notas exóticas e envolventes inspiradas em reis e príncipes orientais.",
+        imagem: "img/perfumes/al-noble-ameer.jpeg"
+      },
+      {
+        nome: "Attar Al Wesal",
+        preco: "R$ 249",
+        notas_topo: "Pera, lavanda, hortelã, bergamota, limão",
+        notas_coracao: "Canela, sálvia esclaréia, cominho",
+        notas_base: "Casca de baunilha negra, âmbar, cedro, patchouli",
+        descricao: "É uma fragrância que combina frescor, especiarias e uma base envolvente.",
+        imagem: "img/perfumes/attar-al-wesal.jpeg"
+      }
+
+
+
+
+
+
+
+
+    ];
+
+const container = document.getElementById("catalogo");
+
+perfumes.forEach(p => {
+  const card = document.createElement("div");
+  card.classList.add("card-produto");
+
+  const imgSrc = p.imagem ? p.imagem : "img/perfumes/placeholder.png";
+
+  card.innerHTML = `
+    <img src="${imgSrc}" alt="${p.nome}">
+    <h3>${p.nome}</h3>
+    <p class="preco">${p.preco}</p>
+
+    ${p["notas_topo"] ? `
+      <p class="notas-linha"><strong>NOTAS DE TOPO:</strong><br>${p["notas_topo"]}</p>
+    ` : ""}
+
+    ${p["notas_coracao"] ? `
+      <p class="notas-linha"><strong>NOTAS DE CORAÇÃO:</strong><br>${p["notas_coracao"]}</p>
+    ` : ""}
+
+    ${p["notas_base"] ? `
+      <p class="notas-linha"><strong>NOTAS DA BASE:</strong><br>${p["notas_base"]}</p>
+    ` : ""}
+
+    <p class="descricao"><strong>DESCRIÇÃO:</strong><br>${p.descricao}</p>
+
+    <a href="https://wa.me/5583986745872?text=Olá! Gostaria de saber mais sobre o perfume ${encodeURIComponent(p.nome)}"
+       target="_blank" class="btn">Pedir no WhatsApp</a>
+  `;
+
+  container.appendChild(card);
+});
+
+
+  </script>
+</body>
+</html>

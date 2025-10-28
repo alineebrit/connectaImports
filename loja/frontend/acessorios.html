@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessórios - Connecta</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <img src="img/nova-logo.png" alt="Connecta Imports" class="logo">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="celulares-lacrados.html">Aparelhos Lacrados</a>
+      <a href="celulares-seminovos.html">Aparelhos Seminovos</a>
+      <a href="ipads.html">iPads</a>
+      <a href="tablets.html">Tablets</a>
+      <a href="acessorios.html">Acessórios</a>
+      <a href="perfumes.html">Perfumes Árabes</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section class="acessorios">
+    <h2>Acessórios</h2>
+    <p class="subtitle">Complete seu setup com os melhores acessórios Connecta 💎</p>
+    <div class="grid" id="lista-acessorios"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Connecta — Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5583986745872?text=Olá! Gostaria de saber mais sobre os acessórios da Connecta."
+     class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const acessorios = [
+      {
+        nome: "Power Bank Xiaomi 20000mAh",
+        preco: "R$ 180,00",
+        descricao: "18W Fast Charge ⚡ | Alta capacidade 🔋 | à vista 💰",
+        imagem: "img/acessorios/powerbank.jpeg"
+      },
+      {
+        nome: "Hub Multifuncional 7 em 1",
+        preco: "R$ 110,00",
+        descricao: "HDMI 4K 📺 | USB | Cartão SD/MicroSD | Entrada Type-C 🔌",
+        imagem: "img/acessorios/hub7em1.jpeg"
+      },
+      {
+        nome: "Case de Silicone iPhone (diversos modelos)",
+        preco: "R$ 40,00",
+        descricao: "Cores variadas 🎨 | Acabamento premium | à vista 💰",
+        imagem: "img/acessorios/casesiphone.jpeg"
+      },
+      {
+        nome: "Case com teclado para iPad 10/11/Air",
+        preco: "R$ 599,00",
+        descricao: "Com retroiluminação 💡 | Até 3x de R$ 200,00 💳",
+        imagem: "img/acessorios/case_teclado.jpeg"
+      },
+      {
+        nome: "Caneta Stylus para iPad",
+        preco: "R$ 130,00",
+        descricao: "Palm Rejection ✅ | Alta precisão ✍️ | à vista 💰",
+        imagem: "img/acessorios/caneta_stylus.jpeg"
+      },
+      {
+        nome: "Caneta Baseus Magnética",
+        preco: "R$ 239,90",
+        descricao: "Design magnético 🧲 | Escrita suave ✍️ | à vista 💰",
+        imagem: "img/acessorios/caneta_baseus.jpeg"
+      },
+      {
+        nome: "Película de cerâmica fosca iPad 9/10/11",
+        preco: "R$ 75,00",
+        descricao: "Anti-reflexo 🌫️ | Toque suave | Proteção total 💪",
+        imagem: "img/acessorios/pelicula_ipad.jpeg"
+      },
+      {
+        nome: "Case para iPad 7/8/9/10/11",
+        preco: "R$ 89,90",
+        descricao: "Cores disponíveis 🌈 | Modelos compatíveis ✅ | à vista 💰",
+        imagem: "img/acessorios/case_ipad.jpeg"
+      },
+      {
+        nome: "Suporte giratório 360º para tablet",
+        preco: "R$ 75,00",
+        descricao: "Base metálica ⚙️ | Rotação completa | à vista 💰",
+        imagem: "img/acessorios/suporte_tablet.jpeg"
+      },
+      {
+        nome: "Kit Teclado e Mouse Bluetooth",
+        preco: "R$ 120,00",
+        descricao: "Conexão BT 💻 | Várias cores 🎨 | à vista 💰",
+        imagem: "img/acessorios/kit_teclado_mouse.jpeg"
+      }
+    ];
+
+    const container = document.getElementById("lista-acessorios");
+
+    acessorios.forEach(a => {
+      const card = document.createElement("div");
+      card.classList.add("card-produto");
+      card.innerHTML = `
+        <img src="${a.imagem}" alt="${a.nome}">
+        <h3>${a.nome}</h3>
+        <p class="preco">${a.preco}</p>
+        <p class="descricao">${a.descricao}</p>
+        <a href="https://wa.me/5583986745872?text=Olá! Tenho interesse em ${encodeURIComponent(a.nome)}"
+           target="_blank" class="btn">
+          <i class="fa-brands fa-whatsapp"></i> Pedir no WhatsApp
+        </a>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>

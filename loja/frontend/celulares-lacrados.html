@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celulares Lacrados - Connecta</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="img/nova-logo.png" alt="Connecta Imports" class="logo">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="celulares-lacrados.html">Aparelhos Lacrados</a>
+      <a href="celulares-seminovos.html">Aparelhos Seminovos</a>
+      <a href="ipads.html">iPads</a>
+      <a href="tablets.html">Tablets</a>
+      <a href="acessorios.html">Acessórios</a>
+      <a href="perfumes.html">Perfumes Árabes</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section class="produtos">
+    <h2>Celulares Lacrados</h2>
+    <p class="subtitle">Aparelhos lacrados com garantia e entrega Connecta.</p>
+    <div id="catalogo" class="grid"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Connecta — Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    const produtos = [
+      {
+        nome: "iPhone 17 Pro Max 256GB",
+        preco: "R$ 11.200,00 (azul) / R$ 12.000,00 (laranja)",
+        descricao: "Lacrado ✅ | 1 ano de garantia ✅ | até 18x no cartão 💳",
+        imagem: "img/produtos/iphone17promax.jpeg"
+      },
+      {
+        nome: "iPhone 17 256GB",
+        preco: "R$ 6.799,00",
+        descricao: "Lacrado ✅ | 1 ano de garantia ✅ | Entrega grátis ✅<br>12x R$ 640,67 💳 | 18x R$ 449,67 💳",
+        imagem: "img/produtos/iphone17.jpeg"
+      },
+      {
+        nome: "iPhone 16 128GB",
+        preco: "R$ 4.599,00",
+        descricao: "Lacrado ✅ | 1 ano de garantia ✅ | Entrega grátis ✅<br>à vista ou em até 18x de R$ 305,25 💳",
+        imagem: "img/produtos/iphone16.jpeg"
+      },
+      {
+        nome: "iPhone 15 128GB",
+        preco: "R$ 4.050,00",
+        descricao: "Lacrado ✅ | Capa + Película + Entrega grátis 🎁 | até 18x de R$ 269,66 💳",
+        imagem: "img/produtos/iphone15.jpeg"
+      },
+      {
+        nome: "iPhone 14 128GB",
+        preco: "R$ 3.399,00",
+        descricao: "Lacrado ✅ | 1 ano de garantia ✅ | Entrega grátis ✅<br>12x R$ 322,67 💳 | 18x R$ 226,48 💳",
+        imagem: "img/produtos/iphone14.jpeg"
+      }
+
+    ];
+
+    const container = document.getElementById("catalogo");
+    produtos.forEach(p => {
+      const card = document.createElement("div");
+      card.classList.add("card-produto");
+      card.innerHTML = `
+        <img src="${p.imagem}" alt="${p.nome}">
+        <h3>${p.nome}</h3>
+        <p class="preco">${p.preco}</p>
+        <p class="descricao">${p.descricao}</p>
+        <a href="https://wa.me/5583986745872?text=Olá! Gostaria de saber mais sobre ${encodeURIComponent(p.nome)}"
+           target="_blank" class="btn">Pedir no WhatsApp</a>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Connecta</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+<body>
+  <header>
+    <img src="img/nova-logo.png" alt="Connecta Imports" class="logo">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="celulares-lacrados.html">Aparelhos Lacrados</a>
+      <a href="celulares-seminovos.html">Aparelhos Seminovos</a>
+      <a href="ipads.html">iPads</a>
+      <a href="tablets.html">Tablets</a>
+      <a href="acessorios.html">Acessórios</a>
+      <a href="perfumes.html">Perfumes Árabes</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+
+  <section class="contato">
+    <h2>Fale Conosco</h2>
+    <p class="subtitle">Estamos prontos para te atender pelo WhatsApp, Instagram ou presencialmente.</p>
+
+    <div class="contato-grid">
+      <div class="contato-info">
+        <h3><i class="fa-brands fa-whatsapp"></i> WhatsApp</h3>
+        <p><a href="https://wa.me/5583986745872?text=Olá! Vim pelo site da Connecta e quero mais informações." target="_blank">
+          (83) 98674-5872 — Clique para conversar</a></p>
+
+        <h3><i class="fa-brands fa-instagram"></i> Instagram</h3>
+        <p><a href="https://www.instagram.com/connecta.imports/" target="_blank">@connecta.imports</a></p>
+
+        <h3><i class="fa-solid fa-location-dot"></i> Endereço</h3>
+        <p>
+          Av. Pres. Epitácio Pessoa, 1251<br>
+          Empresarial Epitácio Pessoa, 9º andar, sala 909.<br>
+          Estados — João Pessoa - PB, 58030-901.
+        </p>
+        
+      </div>
+      <!-- Mapa -->
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.7750146329224!2d-34.872053325821!3d-7.083521769100836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace84c191b4b21%3A0x243e88ddaeec4e16!2sAv.%20Pres.%20Epit%C3%A1cio%20Pessoa%2C%201251%20-%20Estados%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058030-901!5e0!3m2!1spt-BR!2sbr!4v1734462400000!5m2!1spt-BR!2sbr"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
+
+
+      <div class="contato-form">
+        <h3><i class="fa-solid fa-envelope"></i> Envie uma mensagem</h3>
+        <form id="formContato">
+          <input type="text" id="nome" placeholder="Seu nome" required>
+          <input type="email" id="email" placeholder="Seu e-mail" required>
+          <textarea id="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+        <p id="msg-enviada" class="msg-sucesso" style="display:none;">Mensagem enviada com sucesso ✅</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Connecta — Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+<a
+  href="https://wa.me/5583986745872?text=Olá! Gostaria de saber mais sobre os produtos da Connecta."
+  class="whatsapp-float"
+  target="_blank"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+
+
+  <!-- SCRIPT DE ENVIO PELO WHATSAPP -->
+  <script>
+    const form = document.getElementById("formContato");
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const mensagem = document.getElementById("mensagem").value;
+
+      const texto = `Olá! Meu nome é ${nome}.%0AEmail: ${email}%0A%0A${mensagem}`;
+      const url = `https://wa.me/5583986745872?text=${texto}`;
+
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nome": "iPhone 15 Pro 128GB",
+    "preco": 7499,
+    "categoria": "celulares",
+    "imagem": "img/iphone15.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "iPad Air 5ª Geração 64GB",
+    "preco": 4599,
+    "categoria": "tablets",
+    "imagem": "img/ipad.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Fone Bluetooth JBL Tune 510BT",
+    "preco": 349,
+    "categoria": "acessorios",
+    "imagem": "img/fone.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Perfume Dior Sauvage 100ml",
+    "preco": 599,
+    "categoria": "perfumes",
+    "imagem": "img/dior.jpg"
+  }
+]
