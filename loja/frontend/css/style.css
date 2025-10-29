@@ -521,3 +521,315 @@ h2 {
   gap: 30px;
   justify-content: center;
 }
+
+
+/* ===== HEADER ===== */
+header {
+  width: 100%;
+  background-color: #0c0c0c;
+  border-bottom: 1px solid #b18b4d;
+  position: relative;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+/* Ícone de menu primeiro */
+.menu-toggle {
+  order: 1;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #d4a95f;
+  cursor: pointer;
+}
+
+.logo {
+  order: 2;
+  width: 90px;
+}
+
+/* Links do menu */
+.nav-links {
+  order: 3;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d4a95f;
+}
+
+/* ===== MENU MOBILE ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 20px 0;
+    border-top: 1px solid #b18b4d;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+}
+
+/* ===== BOTÕES DE CATEGORIA ===== */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.hero-buttons .btn-outline {
+  border: 1px solid #b18b4d;
+  color: #d4a95f;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s;
+  min-width: 160px;
+}
+
+.hero-buttons .btn-outline:hover {
+  background-color: #b18b4d;
+  color: #0c0c0c;
+}
+
+/* Ajuste mobile */
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .hero-buttons .btn-outline {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* ===== CORREÇÃO FINAL — LOGO SUMINDO NO MOBILE ===== */
+
+/* Header fixo, unificado */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #0c0c0c;
+  border-bottom: 1px solid #b18b4d;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo sempre visível */
+.logo {
+  width: 85px;
+  height: auto;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Ícone do menu hambúrguer */
+.menu-toggle {
+  font-size: 30px;
+  color: #d4a95f;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Garante espaço suficiente abaixo do header */
+.hero {
+  padding-top: 110px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+/* Logo animada reposicionada e visível */
+.logo-animada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 40px 0;
+}
+
+.logo-animada img {
+  width: 320px;
+  max-width: 80vw;
+  height: auto;
+}
+
+/* Mantém espaçamento dos botões e visibilidade */
+.hero-buttons {
+  margin-bottom: 100px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Footer com traço dourado visível */
+footer {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+  margin-top: 40px;
+  border-top: 1px solid #b18b4d;
+  background-color: #0c0c0c;
+}
+
+/* Logo do footer */
+.footer-logo {
+  display: block;
+  margin: 20px auto 10px auto;
+  width: 80px;
+  height: auto;
+}
+
+/* Menu mobile sempre acima da logo animada */
+@media (max-width: 768px) {
+  .logo {
+    width: 75px;
+  }
+
+  .logo-animada img {
+    width: 240px;
+    margin-top: 20px;
+  }
+
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+}
+
+/* ===== ESCONDER BOTÃO SANDUÍCHE NO DESKTOP ===== */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none !important;
+  }
+}
+
+/* ===== MOSTRAR BOTÃO SANDUÍCHE NO MOBILE ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important;
+  }
+}
+/* ===== LOGO À ESQUERDA (DESKTOP) ===== */
+@media (min-width: 769px) {
+  header {
+    justify-content: space-between;
+  }
+
+  .header-content {
+    flex-direction: row; /* garante logo à esquerda, menu à direita */
+  }
+
+  .logo {
+    order: 1;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  .nav-links {
+    order: 2;
+    justify-content: flex-end;
+    flex: 1;
+  }
+}
+
+
+/* ===== AJUSTE DEFINITIVO — LOGO À ESQUERDA, MENU À DIREITA ===== */
+@media (min-width: 769px) {
+  header {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 100%;
+  }
+
+  .header-content {
+    display: flex !important;
+    flex-direction: row !important; /* logo à esquerda, menu à direita */
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 40px;
+  }
+
+  .logo {
+    order: 1 !important;
+    margin-right: 40px;
+    margin-left: 0;
+  }
+
+  .nav-links {
+    order: 2 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    flex: 1;
+    gap: 25px;
+  }
+
+
+}
+
+/* ===== CORRIGE O CORTE DOS TÍTULOS (ESPAÇO ABAIXO DO HEADER FIXO) ===== */
+main, section, .hero {
+  padding-top: 120px; /* espaço suficiente abaixo do header */
+}
+
+

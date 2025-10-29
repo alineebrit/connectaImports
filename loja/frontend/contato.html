@@ -12,9 +12,18 @@
 
 </head>
 <body>
-  <header>
+ 
+<header>
+  <!-- Botão hambúrguer -->
+  <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+  <div class="header-content">
     <img src="img/nova-logo.png" alt="Connecta Imports" class="logo">
-    <nav>
+
+
+
+    <!-- Menu principal -->
+    <nav class="nav-links">
       <a href="index.html">Início</a>
       <a href="celulares-lacrados.html">Aparelhos Lacrados</a>
       <a href="celulares-seminovos.html">Aparelhos Seminovos</a>
@@ -24,8 +33,8 @@
       <a href="perfumes.html">Perfumes Árabes</a>
       <a href="contato.html">Contato</a>
     </nav>
-  </header>
-
+  </div>
+</header>
 
   <section class="contato">
     <h2>Fale Conosco</h2>
@@ -105,7 +114,17 @@
 
       window.open(url, "_blank");
     });
+
   </script>
+</script>
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
 
