@@ -649,18 +649,7 @@ header {
 
 /* ===== CORREÇÃO FINAL — LOGO SUMINDO NO MOBILE ===== */
 
-/* Header fixo, unificado */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #0c0c0c;
-  border-bottom: 1px solid #b18b4d;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-}
+
 
 .header-content {
   width: 100%;
@@ -671,15 +660,6 @@ header {
   justify-content: space-between;
 }
 
-/* Logo sempre visível */
-.logo {
-  width: 85px;
-  height: auto;
-  display: block;
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
 
 /* Ícone do menu hambúrguer */
 .menu-toggle {
@@ -697,13 +677,6 @@ header {
   text-align: center;
 }
 
-/* Logo animada reposicionada e visível */
-.logo-animada {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0 40px 0;
-}
 
 .logo-animada img {
   width: 320px;
